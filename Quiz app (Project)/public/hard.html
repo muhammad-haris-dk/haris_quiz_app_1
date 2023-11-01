@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin-top: 80px;
+        color: white;
+        background-color: rgb(0, 14, 86);
+        font-size: 35px;
+        
+    }
+    .styling{
+        text-align: center;
+        margin-top: 120px;
+    }
+    #time{
+        display: flex;
+        justify-content: center;
+    }
+    #timer{
+        padding: 15px;
+        width: 150px;
+        border: 2px solid rgb(82, 0, 255);
+        background-color: rgb(82, 0, 255);
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+    }
+    #para{
+        display: flex;
+        justify-content: center;
+    }
+    .option1{
+        display: flex;
+        justify-content: center;
+    }
+    .widh{
+        width: 350px;
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 50px;
+    }
+    #button{
+        display: flex;
+        justify-content: center;
+    }
+    #btn{
+        border: none;
+        width: 150px;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: rgb(82, 0, 255);
+        font-size: x-large;
+        color: white;
+    }
+    #btn:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    #main{
+        border: none;
+        width: 150px;
+        padding: 10px;
+        border-radius: 50px;
+        /* background-color: rgb(82, 0, 255); */
+        font-size: x-large;
+        color: white;
+    }
+    
+    .display{
+        display: inline-block;
+    }
+</style>
+<body onload="nextQuestion()">
+    <div id="time">
+        <p id="timer">2:00</p>
+    </div>
+    <div id="para">
+        <p id="ques"></p>
+
+    </div>
+
+        <div class="option1">
+            <div class="widh">
+                <input onclick="clicked()" type="radio" value="1" name="options" id="chek">
+            <label for="chek" id="opt1"></label></div>
+        </div>
+
+<br>
+        <div class="option1">
+            <div class="widh">
+                <input onclick="clicked()" type="radio" value="2" name="options" id="chek1">
+            <label for="chek1" id="opt2"></label>
+        </div>
+        </div>
+
+<br>
+        <div class="option1">
+            <div class="widh">
+                <input onclick="clicked()" type="radio" value="3" name="options" id="chek2">
+                <label for="chek2" id="opt3"></label>
+            </div>
+        </div>
+        <br>
+        <div id="button">
+        <button id="btn" disabled onclick="nextQuestion()">Next</button>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="hard.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(0, 14, 86);
+        margin-top: 100px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .btn{
+        color: white;
+        background-color: transparent;
+        border: 8px solid rgb(30, 9, 133);
+        padding: 15px;
+        font-size: x-large;
+        width: 200px;
+        border-radius: 50px;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <p>Easy</p>
+    <div class="center">
+        <button onclick="easy()" class="btn">Start Quiz</button>
+    </div><br>
+    <p>Normal</p>
+    <div class="center">
+        <button onclick="normal()" class="btn">Start Quiz</button>
+    </div><br>
+    <p>Hard</p>
+    <div class="center">
+        <button onclick="hard()" class="btn">Start Quiz</button>
+    </div>
+
+
+
+
+    <script>
+        function easy(){
+            window.location.href = "easy.html"
+        }
+        function normal(){
+            window.location.href = "normal.html"
+        }
+        function hard(){
+            window.location.href = "hard.html"
+        }
+    </script>
+</body>
+</html>
