@@ -95,7 +95,7 @@ interval = setInterval(function () {
       nextQuestion();
     }
   }
-}, 100);
+}, 1000);
 
 function nextQuestion() {
   var getOptions = document.getElementsByName("options");
